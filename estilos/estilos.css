@@ -30,11 +30,11 @@ body {
 
 /*Nav*/
 
-a{
+a {
   text-decoration: none;
 }
 
-ol,ul{
+ul, ol {
   list-style: none;
 }
 
@@ -42,7 +42,7 @@ ol,ul{
   position: relative;
   z-index: 9999;
   height: 80px;
-  background-color:#222222;
+  background-color: #222222;
 }
 
 .navbar {
@@ -54,7 +54,7 @@ ol,ul{
   padding: 0 2rem;
 }
 
-.menu_hamburguesa{
+.menu_hamburguesa {
   display: none;
 }
 
@@ -70,6 +70,7 @@ ol,ul{
   color: #fff;
   cursor: pointer;
 }
+
 .ul_enlace {
   width: 100%;
   background-color: #222222;
@@ -83,64 +84,46 @@ ol,ul{
   justify-content: center;
   align-items: center;
   gap: 3rem;
+  transition: all 0.3s;
+}
 
-  transition: all .3s;
+@media (min-width: 768px) {
+  .ul_enlace {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+    z-index: auto;
+    top: auto;
+    left: auto;
+  }
 }
 
 .enlace {
-  font-size: 3em;
+  font-size: 1.2rem;
   color: #fff;
   font-weight: 300;
+  transition: all 0.3s;
+  padding: 0.2rem 0.7rem;
+}
+
+.enlace:hover {
+  color: #ff164b;
 }
 
 @media (max-width: 576px) {
   .enlace {
-      font-size: 2em;
+    font-size: 2em;
   }
 }
 
-@media (min-width:768px){
+@media (min-width: 768px) {
   .labe_hamburguesa {
-      display: none;
-  } 
+    display: none;
+  }
 }
 
-  .ul_enlace {
-    width: 100%;
-    background-color: #222222;
-    position: fixed; 
-    top: 80px;
-    left: 0;
-    height: calc(100vh - 80px);
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    transition: all .3s;
-  }
-  
-  @media (min-width: 768px) {
-    .ul_enlace {
-      position: static;
-      width: auto;
-      height: auto;
-      flex-direction: row;
-      gap: 2rem;
-      z-index: auto;
-    }
-  }
-
-  .enlace{
-      font-size: 1.2rem;
-      transition: all .3s;
-      padding: .2rem .7rem;
-  }
-
-  .enlace:hover{
-      color: #ff164b;
-  }
 
 /*Main Titles*/
 
