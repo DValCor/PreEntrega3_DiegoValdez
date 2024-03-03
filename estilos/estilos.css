@@ -13,16 +13,20 @@
   url("../fonts/Roboto-Light.ttf");
   }
 
+  @font-face {
+    font-family: "Raleway";
+    src: url("../fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype"),
+    url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype"),
+    url("../fonts/static/Raleway-Black.ttf") format("truetype"),
+    url("../fonts/static/Raleway-Bold.ttf") format("truetype"),
+    url("../fonts/static/Raleway-ExtraBold.ttf") format("truetype");
+  }
 
 body {
   font-family: "Roboto", sans-serif;
   background-color: #252525;
 }
 
-.container-fluid {
-  padding-right: 0;
-  padding-left: 0;
-}
 
 /*Nav*/
 
@@ -84,6 +88,12 @@ ol,ul{
   font-size: 3em;
   color: #fff;
   font-weight: 300;
+}
+
+@media (max-width: 576px) {
+  .enlace {
+      font-size: 2em;
+  }
 }
 
 @media (min-width:768px){
@@ -290,6 +300,36 @@ p {
 .service {
   margin: 70px 0 70px 0;
   text-align: center;
+}
+
+/*Servicios*/
+
+.white {
+  background-color: #fff;
+}
+.servicios_encabezados {
+  font-size: calc(10px + 9.9vw);
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight:900;
+  color: #222222;
+}
+
+.servicios_link {
+  font-size: calc(10px + 1.0vw);
+  font-weight:600;
+}
+
+.servicios_link a {
+  color: #222222; 
+  font-family: 'Helvetica Neue', sans-serif; 
+  text-decoration: underline;
+}
+
+.servicios_parrafo {
+  font-size: calc(5px + 1.0vw);
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  color: #ffffff;
 }
 
 /*Contact*/
