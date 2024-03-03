@@ -95,11 +95,12 @@ ol,ul{
       font-size: 2em;
   }
 }
-git
+
 @media (min-width:768px){
   .labe_hamburguesa {
       display: none;
   } 
+}
 
   .ul_enlace {
     width: 100%;
@@ -136,7 +137,6 @@ git
   .enlace:hover{
       color: #ff164b;
   }
-}
 
 /*Main Titles*/
 
