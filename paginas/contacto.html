@@ -58,8 +58,8 @@
   </header>
     <main>
       <div class="main-title"><h1>Contacto</h1></div>
-      <section class="contact-info-section">
-        <div class="contact-txt1">
+      <section class="container-fluid">
+       <!-- <div class="contact-txt1">
           <h2>Ron Roberts</h2>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius odio
@@ -76,23 +76,74 @@
             veritatis voluptatum, maxime officiis nobis accusantium labore
             quibusdam culpa quas dicta.
           </p>
+        </div> -->
+        <div class="row justify-content-center">
+          <div class="card mx-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Ron Roberts</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">mail@mail.com</a>
+            </div>
+          </div>
+          <div class="card mx-2" style="width: 18rem;">
+            <div class="card-body">
+              <h5 class="card-title">Rita Rivers</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="card-link">Card link</a>
+              <a href="#" class="card-link">mail@mail.com</a>
+            </div>
+          </div>
         </div>
       </section>
-      <form action="#" method="post">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required>
-    
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono">
-    
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
-    
-        <label for="mensaje">Mensaje:</label>
-        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-    
-        <button type="submit">Enviar >></button>
-      </form>
+      <div class="container text-center">
+        <div class="row">
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+                <option selected>Choose...</option>
+                <option>...</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  Check me out
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary my-button">Sign in</button>
+            </div>
+          </form>
+        </div>
+      </div> 
     </main>
     <footer class="custom-footer">
       <div class="container py-4 py-lg-5">
