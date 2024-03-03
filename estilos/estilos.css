@@ -163,12 +163,8 @@ ol,ul{
 
 /*Sección Info*/
 
-.info-section {
-  margin: 70px 0 30px 0;
-}
-
-.intro-txt {
-  font-size: 25px;
+.altura_texto {
+  height: 200px;
 }
 
 /*director-cards*/
