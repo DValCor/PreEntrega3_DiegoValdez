@@ -1,8 +1,12 @@
+/*FORMATO*/
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+/*FONTS*/
 
   @font-face {
   font-family: "Roboto";
@@ -22,13 +26,25 @@
     url("../fonts/static/Raleway-ExtraBold.ttf") format("truetype");
   }
 
+
+  /*BODY*/
+
 body {
   font-family: "Roboto", sans-serif;
   background-color: #252525;
 }
 
 
-/*Nav*/
+/*NAV*/
+
+.navbar img {
+  filter: invert(100%);
+}
+
+.navbar img:hover {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
 
 a {
   text-decoration: none;
