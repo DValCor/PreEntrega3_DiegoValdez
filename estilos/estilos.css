@@ -1,43 +1,29 @@
-/*FORMATO*/
+@charset "UTF-8";
 
+/*VARIABLES*/
+/*FORMATO*/
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/*FONTS*/
-
-  @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Black.ttf"), url("../fonts/Roboto-BlackItalic.ttf"),
-  url("../fonts/Roboto-Bold.ttf"),url("../fonts/Roboto-LightItalic.ttf"),
-  url("../fonts/Roboto-BoldItalic.ttf"),url("../fonts/Roboto-Medium.ttf")
-  url("../fonts/Roboto-Italic.ttf"),url("../fonts/Roboto-MediumItalic.ttf")
-  url("../fonts/Roboto-Light.ttf");
-  }
-
-  @font-face {
-    font-family: "Raleway";
-    src: url("../fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype"),
-    url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype"),
-    url("../fonts/static/Raleway-Black.ttf") format("truetype"),
-    url("../fonts/static/Raleway-Bold.ttf") format("truetype"),
-    url("../fonts/static/Raleway-ExtraBold.ttf") format("truetype");
-  }
-
-
-  /*BODY*/
-
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #252525;
+  background-color: #222222;
 }
 
-/*HOME----------------------------------------------------------------------------------------------------------------------------------------------*/
-
+/*FONTS*/
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Black.ttf"), url("../fonts/Roboto-BlackItalic.ttf"), url("../fonts/Roboto-Bold.ttf"), url("../fonts/Roboto-LightItalic.ttf"), url("../fonts/Roboto-BoldItalic.ttf"), url("../fonts/Roboto-Medium.ttf") url("../fonts/Roboto-Italic.ttf"), url("../fonts/Roboto-MediumItalic.ttf") url("../fonts/Roboto-Light.ttf");
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Italic-VariableFont_wght.ttf") format("truetype"), url("../fonts/Raleway-VariableFont_wght.ttf") format("truetype"), url("../fonts/static/Raleway-Black.ttf") format("truetype"), url("../fonts/static/Raleway-Bold.ttf") format("truetype"), url("../fonts/static/Raleway-ExtraBold.ttf") format("truetype");
+}
+/*NAV*/
 /*Nav-----------------------------*/
-
 .navbar img {
   filter: invert(100%);
 }
@@ -79,7 +65,6 @@ ul, ol {
   height: calc(100vh - 80px);
 }
 
-
 .list_icon {
   color: #fff;
   cursor: pointer;
@@ -114,7 +99,6 @@ ul, ol {
 }
 
 /* Media query para pantallas pequeñas */
-
 @media (min-width: 992px) {
   .ul_enlace {
     position: static;
@@ -127,36 +111,17 @@ ul, ol {
     left: auto;
   }
 }
-
-
 @media (max-width: 576px) {
   .enlace {
     font-size: 2em;
   }
 }
-
 @media (min-width: 992px) {
   .labe_hamburguesa {
     display: none;
   }
 }
-
-
-/*Main titles-----------------------------*/
-
-.main-title {
-  text-align: center;
-  margin-top: 100px;
-  margin-bottom: 100px;
-}
-
-.main-title h1 {
-  margin: 0;
-  color: #fff;
-}
-
-/*Sección Feed con cards de trabajos realizados-----------------------------*/
-
+/*HOME*/
 .card-overlay {
   position: absolute;
   top: 0;
@@ -180,30 +145,33 @@ ul, ol {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) translateY(60%);
-  color: white;
+  color: #fff;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, transform 0.6s ease-in-out;
   z-index: 1;
 }
 
 .card:hover h2 {
-  opacity: 1; 
-  transform: translate(-50%, -50%) translateY(0); 
+  opacity: 1;
+  transform: translate(-50%, -50%) translateY(0);
 }
 
-/*work-cards-----------------------------*/
-
-.card-group {
-  margin: -2px;
+/*WORK*/
+.text-start {
+  color: #fff;
+  font-weight: 100;
+  font-size: calc(10px + 0.5vw);
 }
 
-/*Sección Info-----------------------------*/
-
-.altura_texto {
-  height: 200px;
+/*STAFF*/
+.main-title {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  color: #fff;
+  font-weight: 100;
+  font-family: "Roboto", sans-serif;
 }
-
-/*STAFF----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .director-info-section {
   text-align: left;
@@ -219,7 +187,7 @@ ul, ol {
 }
 
 .director-info-section h2,
-p {
+.director-info-section p {
   line-height: 1.5;
   color: #fff;
   margin-top: 10px;
@@ -269,11 +237,11 @@ p {
 
 /*Bloque de texto que aparece al hacer click sobre imagen -----------------------------*/
 .director-txt1 {
-  display: none; 
+  display: none;
 }
 
 #ron-info:target {
-  display: block; 
+  display: block;
 }
 
 #rita-info:target {
@@ -296,107 +264,56 @@ p {
     align-items: center;
   }
 }
-
 @media (max-width: 1024px) {
   .director-div {
     width: 100%;
-    max-width: 300px; 
+    max-width: 300px;
     margin-bottom: 20px;
   }
   .director-div img {
     width: 100%;
-    height: auto; 
+    height: auto;
   }
   .overlay p {
-    margin-top: 150px; 
+    margin-top: 150px;
   }
 }
-
-
-
-/*info-section-----------------------------*/
-
-.info-section {
-  margin: 130px 0 50px 0;
-}
-
-.info-txt1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  font-style: normal;
-  line-height: 1.5;
-  margin-left: 50px;
-  width: 600px;
-  color: #fff;
-}
-
-/*Service cards-----------------------------*/
-
-.srvice-cards {
-  display: flex;
-  width: 95%;
-}
-
-.service-cards-container {
-  display: flex;
-  width: 100%;
-}
-
-.half-width {
-  flex: 1;
-  box-sizing: border-box;
-}
-
-.full-width {
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.service-info-section {
-  text-align: center;
-}
-
-.service {
-  margin: 70px 0 70px 0;
-  text-align: center;
-}
-
-/*SOBRE NOSOTROS------------------------------------------------------------------------------------------------------------------------------*/
-
+/*SOBRE NOSOTROS*/
 .white {
   background-color: #fff;
 }
+
 .servicios_encabezados {
   font-size: calc(10px + 9.9vw);
-  font-family: 'Helvetica Neue', sans-serif;
-  font-weight:900;
+  font-family: "Helvetica Neue", sans-serif;
+  font-weight: 900;
   color: #222222;
 }
 
 .servicios_link {
-  font-size: calc(10px + 1.0vw);
-  font-weight:600;
+  font-size: calc(10px + 1vw);
+  font-weight: 600;
 }
 
 .servicios_link a {
-  color: #222222; 
-  font-family: 'Helvetica Neue', sans-serif; 
+  color: #222222;
+  font-family: "Helvetica Neue", sans-serif;
   text-decoration: underline;
 }
 
 .servicios_parrafo {
-  font-size: calc(5px + 1.0vw);
-  font-family: 'Roboto', sans-serif;
-  font-weight:300;
-  color: #ffffff;
+  font-size: calc(5px + 1vw);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
 }
 
-/*CONTACTO------------------------------------------------------------------------------------------------------------------------------*/
+/*CONTACTO*/
 .h1-custom {
-  font-size: calc(25px + 1.0vw);
-  font-family: 'Roboto', sans-serif;
-  font-weight:300;
-  color: #ffffff;
+  font-size: calc(25px + 1vw);
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: #fff;
   margin-top: 30px;
 }
 
@@ -406,24 +323,22 @@ p {
 }
 
 .card h5,
-p,
-a {
+.card p,
+.card a {
   color: #fff;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
-/*Form-----------------------------*/
-
+/*Form*/
 .main-title h1 {
-  text-transform: uppercase;  
+  text-transform: uppercase;
 }
 
 .form-control {
   font-family: "Roboto", sans-serif;
   font-weight: 100;
   font-style: normal;
- 
 }
 
 .btn-custom {
@@ -442,26 +357,26 @@ a {
   border: 2px solid #ff164b;
 }
 
-
-/*FOOTER------------------------------------------------------------------------------------------------------------------------------*/
-
+/*FOOTER*/
 .footer1 {
   width: 100%;
   float: left;
   padding-top: 60px;
   padding-bottom: 60px;
-  background-color: #080808;
+  background-color: #252525;
 }
 
 .fade.visible, .fade_delay.visible {
   opacity: 1;
   transform: translate(0, 0);
 }
+
 .fade, .fade_delay {
   opacity: 0;
   transform: translate(0, 20px);
   transition: all 1s;
 }
+
 .f1_wrap {
   width: 75%;
   margin-right: 25%;
@@ -480,15 +395,6 @@ a {
   padding-bottom: 60px;
 }
 
-.fade.visible, .fade_delay.visible {
-  opacity: 1;
-  transform: translate(0, 0);
-}
-.fade, .fade_delay {
-  opacity: 0;
-  transform: translate(0, 20px);
-  transition: all 1s;
-}
 .f2 {
   width: 25%;
   float: left;
@@ -505,19 +411,23 @@ p.f2_title {
 
 .f2 p {
   font-size: 18px;
+  font-weight: 100;
   line-height: 22px;
   margin-bottom: 22px;
+  color: #fff;
 }
 
-.fade.visible, .fade_delay.visible {
+.fade.visible.visible, .fade_delay.visible {
   opacity: 1;
   transform: translate(0, 0);
 }
+
 .fade, .fade_delay {
   opacity: 0;
   transform: translate(0, 20px);
   transition: all 1s;
 }
+
 .f2 {
   width: 25%;
   float: left;
@@ -532,7 +442,8 @@ p.f2_title {
   box-sizing: border-box;
   padding-left: 60px;
 }
-.f3, .f3, .f3 {
+
+.f3 {
   width: 25%;
   float: left;
   box-sizing: border-box;
@@ -543,54 +454,59 @@ a.f_insta, a.f_yt, a.f_tw {
   display: inline-block;
   width: 31px;
   height: 31px;
-  float: left;
   margin-right: 20px;
   transition: background-image 0.8s ease;
 }
 
 a {
   text-decoration: none;
+  color: #fff;
 }
 
-.fade.visible, .fade_delay.visible {
+a:hover {
+  color: #ff164b;
+}
+
+.fade.visible.visible, .fade_delay.visible {
   opacity: 1;
   transform: translate(0, 0);
 }
 
 .f3 p, .f3 p a {
-  color: #828485;
+  color: #fff;
+  font-weight: 100;
 }
+
 .f3 p {
   font-size: 18px;
   line-height: 22px;
 }
 
 /*RRSS Icono-----------------------------*/
-
 /* Establecer las imágenes por defecto */
 .f_insta {
-  background-image: url('../imagenes/RRSS/IG-White.png');
+  background-image: url("../imagenes/RRSS/IG-White.png");
 }
 
 .f_yt {
-  background-image: url('../imagenes/RRSS/YT-White.png');
+  background-image: url("../imagenes/RRSS/YT-White.png");
 }
 
 .f_tw {
-  background-image: url('../imagenes/RRSS/X-White.png');
+  background-image: url("../imagenes/RRSS/X-White.png");
 }
 
 /* Cambiar las imágenes al hacer hover */
 .f_insta:hover {
-  background-image: url('../imagenes/RRSS/IG-Red.png');
+  background-image: url("../imagenes/RRSS/IG-Red.png");
 }
 
 .f_yt:hover {
-  background-image: url('../imagenes/RRSS/YT-Red.png');
+  background-image: url("../imagenes/RRSS/YT-Red.png");
 }
 
 .f_tw:hover {
-  background-image: url('../imagenes/RRSS/X-Red.png');
+  background-image: url("../imagenes/RRSS/X-Red.png");
 }
 
 /* Estilos para pantallas medianas */
@@ -610,7 +526,6 @@ a {
     padding-right: 30px;
   }
 }
-
 /* Estilos para pantallas pequeñas */
 @media (max-width: 768px) {
   .f2_wrap,
@@ -624,33 +539,4 @@ a {
     width: 100%;
     padding-right: 0;
   }
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+}/*# sourceMappingURL=estilos.css.map */

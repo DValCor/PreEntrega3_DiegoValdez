@@ -1,0 +1,29 @@
+.white {
+    background-color: $white;
+  }
+  .servicios_encabezados {
+    font-size: calc(10px + 9.9vw);
+    font-family: $font2;
+    font-weight:900;
+    color: $main_black;
+  }
+  
+  .servicios_link {
+    font-size: calc(10px + 1.0vw);
+    font-weight:600;
+  }
+  
+  .servicios_link {
+    a {
+        color: $main_black; 
+        font-family: 'Helvetica Neue', sans-serif; 
+        text-decoration: underline;
+      }
+  }
+  
+  .servicios_parrafo {
+    font-size: calc(5px + 1.0vw);
+    font-family: 'Roboto', sans-serif;
+    font-weight:300;
+    color: $white;
+  }

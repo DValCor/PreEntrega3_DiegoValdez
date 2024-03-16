@@ -1,0 +1,210 @@
+.footer1 {
+    width: 100%;
+    float: left;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: $secondary_black;
+  }
+  
+  .fade, .fade_delay {
+    &.visible {
+      opacity: 1;
+      transform: translate(0, 0);
+    }
+  }
+
+  .fade, .fade_delay {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: all 1s;
+  }
+
+  .f1_wrap {
+    width: 75%;
+    margin-right: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-right: 60px;
+    padding-bottom: 90px;
+  }
+  
+  .f2_wrap {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 60px;
+    padding-bottom: 60px;
+  }
+
+  .f2 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 60px;
+    padding-bottom: 30px;
+  }
+  
+  p {
+    &.f2_title {
+      font-size: 22px;
+      line-height: 28px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .f2 {
+    p {
+        font-size: 18px;
+        font-weight: 100;
+        line-height: 22px;
+        margin-bottom: 22px;
+        color: $white;
+      }
+  }
+  
+  .fade.visible, .fade_delay{
+    &.visible {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+  }
+
+  .fade, .fade_delay {
+    opacity: 0;
+    transform: translate(0, 20px);
+    transition: all 1s;
+  }
+
+  .f2 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 60px;
+    padding-bottom: 30px;
+  }
+  
+  .f3_wrap {
+    width: 100%;
+    float: left;
+    box-sizing: border-box;
+    padding-left: 60px;
+  }
+
+  .f3 {
+    width: 25%;
+    float: left;
+    box-sizing: border-box;
+    padding-right: 60px;
+  }
+  
+  a {
+    &.f_insta, &.f_yt, &.f_tw {
+      display: inline-block;
+      width: 31px;
+      height: 31px;
+      margin-right: 20px;
+      transition: background-image 0.8s ease;
+    }
+  }  
+  
+  a {
+    text-decoration: none;
+    color: $white;
+  }
+  
+a {
+    &:hover{
+        color: $red;
+    }
+}
+
+  .fade.visible, .fade_delay{
+    &.visible {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+  }
+  
+  .f3 {
+    p, p a {
+      color: $white;
+      font-weight: 100;
+    }
+  }
+  
+  .f3 {
+    p {
+        font-size: 18px;
+        line-height: 22px;
+      }
+  }
+  
+  /*RRSS Icono-----------------------------*/
+  
+  /* Establecer las imágenes por defecto */
+  .f_insta {
+    background-image: url('../imagenes/RRSS/IG-White.png');
+  }
+  
+  .f_yt {
+    background-image: url('../imagenes/RRSS/YT-White.png');
+  }
+  
+  .f_tw {
+    background-image: url('../imagenes/RRSS/X-White.png');
+  }
+  
+  /* Cambiar las imágenes al hacer hover */
+  .f_insta {
+    &:hover {
+      background-image: url('../imagenes/RRSS/IG-Red.png');
+    }
+  }
+  
+  
+  .f_yt{
+    &:hover {
+        background-image: url('../imagenes/RRSS/YT-Red.png');
+      }
+  }
+  
+  .f_tw{
+    &:hover {
+        background-image: url('../imagenes/RRSS/X-Red.png');
+      }
+  }
+  
+  /* Estilos para pantallas medianas */
+  @media (max-width: 992px) {
+    .f2_wrap,
+    .f3_wrap {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
+    .f2 {
+      width: 50%;
+      padding-right: 30px;
+    }
+    .f3,
+    .f3_2 {
+      width: 50%;
+      padding-right: 30px;
+    }
+  }
+  
+  /* Estilos para pantallas pequeñas */
+  @media (max-width: 768px) {
+    .f2_wrap,
+    .f3_wrap {
+      padding-left: 15px;
+      padding-right: 15px;
+    }
+    .f2,
+    .f3,
+    .f3_2 {
+      width: 100%;
+      padding-right: 0;
+    }
+  }
+  

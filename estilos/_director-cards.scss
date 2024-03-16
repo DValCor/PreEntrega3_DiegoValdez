@@ -1,0 +1,135 @@
+
+.main-title {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    color: $white;
+    font-weight: 100;
+    font-family: $font1;
+  }
+
+.director-info-section {
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+  }
+  
+  .director-txt1 {
+    width: 600px;
+    padding: 20px;
+  }
+  
+  .director-info-section {
+    h2,
+    p {
+      line-height: 1.5;
+      color: $white;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+  }
+
+  .director-cards {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .director-cards-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+  }
+  
+  .director-div {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .director-div {
+  &:hover {
+    .overlay {
+      display: block;
+    }
+  }
+}
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 270px;
+    background-color: rgba(37, 37, 37, 0.7);
+    display: none;
+  }
+  
+  .overlay {
+    p {
+        color: $white;
+        margin-top: 200px;
+        margin-left: 20px;
+      }
+  }
+  
+  .overlay {
+    &:hover {
+      display: block;
+    }
+  }
+  
+  /*Bloque de texto que aparece al hacer click sobre imagen -----------------------------*/
+  .director-txt1 {
+    display: none; 
+  }
+  
+  #ron-info {
+    &:target {
+      display: block;
+    }
+  }
+  
+  #rita-info{
+    &:target {
+        display: block;
+      }
+  }
+  
+  #dylan-info{
+    &:target {
+        display: block;
+      }
+  }
+  
+  #paula-info{
+    &:target {
+        display: block;
+      }
+  }
+  
+  /* Estilos base para la sección de directores-----------------------------*/
+  @media (max-width: 768px) {
+    .director-cards-wrap {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .director-div {
+      width: 100%;
+      max-width: 300px; 
+      margin-bottom: 20px;
+    }
+    .director-div img {
+      width: 100%;
+      height: auto; 
+    }
+    .overlay p {
+      margin-top: 150px; 
+    }
+  }
+  
