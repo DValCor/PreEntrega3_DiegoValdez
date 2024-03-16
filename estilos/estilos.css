@@ -34,8 +34,9 @@ body {
   background-color: #252525;
 }
 
+/*HOME----------------------------------------------------------------------------------------------------------------------------------------------*/
 
-/*NAV*/
+/*Nav-----------------------------*/
 
 .navbar img {
   filter: invert(100%);
@@ -100,19 +101,6 @@ ul, ol {
   transition: all 0.3s;
 }
 
-@media (min-width: 768px) {
-  .ul_enlace {
-    position: static;
-    width: auto;
-    height: auto;
-    flex-direction: row;
-    gap: 2rem;
-    z-index: auto;
-    top: auto;
-    left: auto;
-  }
-}
-
 .enlace {
   font-size: 1.2rem;
   color: #fff;
@@ -125,20 +113,36 @@ ul, ol {
   color: #ff164b;
 }
 
+/* Media query para pantallas pequeñas */
+
+@media (min-width: 992px) {
+  .ul_enlace {
+    position: static;
+    width: auto;
+    height: auto;
+    flex-direction: row;
+    gap: 2rem;
+    z-index: auto;
+    top: auto;
+    left: auto;
+  }
+}
+
+
 @media (max-width: 576px) {
   .enlace {
     font-size: 2em;
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .labe_hamburguesa {
     display: none;
   }
 }
 
 
-/*Main Titles*/
+/*Main titles-----------------------------*/
 
 .main-title {
   text-align: center;
@@ -151,7 +155,7 @@ ul, ol {
   color: #fff;
 }
 
-/*Sección Feed con cards de trabajos realizados*/
+/*Sección Feed con cards de trabajos realizados-----------------------------*/
 
 .card-overlay {
   position: absolute;
@@ -187,19 +191,19 @@ ul, ol {
   transform: translate(-50%, -50%) translateY(0); 
 }
 
-/*work-cards*/
+/*work-cards-----------------------------*/
 
 .card-group {
   margin: -2px;
 }
 
-/*Sección Info*/
+/*Sección Info-----------------------------*/
 
 .altura_texto {
   height: 200px;
 }
 
-/*director-cards*/
+/*STAFF----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .director-info-section {
   text-align: left;
@@ -263,13 +267,13 @@ p {
   display: block;
 }
 
-/*BLOQUES DE TEXTO AL HACER CLICK SOBRE IMAGENES*/
+/*Bloque de texto que aparece al hacer click sobre imagen -----------------------------*/
 .director-txt1 {
-  display: none; /* Oculta el texto por defecto */
+  display: none; 
 }
 
 #ron-info:target {
-  display: block; /* Muestra el texto cuando se hace clic en el enlace #ron */
+  display: block; 
 }
 
 #rita-info:target {
@@ -283,6 +287,31 @@ p {
 #paula-info:target {
   display: block;
 }
+
+/* Estilos base para la sección de directores-----------------------------*/
+@media (max-width: 768px) {
+  .director-cards-wrap {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .director-div {
+    width: 100%;
+    max-width: 300px; /* Limita el ancho de las tarjetas */
+    margin-bottom: 20px;
+  }
+  .director-div img {
+    width: 100%;
+    height: auto; /* Ajusta la altura de las imágenes de forma proporcional */
+  }
+  .overlay p {
+    margin-top: 150px; /* Ajusta el margen superior del texto */
+  }
+}
+
 
 
 /*info-section*/
@@ -363,6 +392,13 @@ p {
 }
 
 /*Contact*/
+.h1-custom {
+  font-size: calc(25px + 1.0vw);
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  color: #ffffff;
+  margin-top: 30px;
+}
 
 .card {
   background-color: #252525;
@@ -379,25 +415,18 @@ a {
 
 /*Form*/
 
-form {
-  max-width: 400px;
-  margin: 0 auto;
+.main-title h1 {
+  text-transform: uppercase;  
 }
 
-label {
-  display: block;
-  margin-bottom: 8px;
+.form-control {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+ 
 }
 
-input,
-textarea {
-  width: 100%;
-  padding: 8px;
-  margin-bottom: 16px;
-  box-sizing: border-box;
-}
-
-button {
+.btn-custom {
   padding: 10px 20px;
   font-size: 16px;
   background-color: transparent;
@@ -408,36 +437,220 @@ button {
   margin-bottom: 100px;
 }
 
+.btn-custom:hover {
+  color: #ff164b;
+  border: 2px solid #ff164b;
+}
+
+
 /*Footer*/
-.custom-footer {
-  font-family: "Roboto", sans-serif;
-  font-weight: 100;
-  background-color: #222222; 
-  color: #fff; 
+
+.footer1 {
+  width: 100%;
+  float: left;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  background-color: #080808;
 }
 
-.custom-footer a {
-  color: #fff; 
+.fade.visible, .fade_delay.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade, .fade_delay {
+  opacity: 0;
+  transform: translate(0, 20px);
+  transition: all 1s;
+}
+.f1_wrap {
+  width: 75%;
+  margin-right: 25%;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 90px;
 }
 
-/*Hover icons*/
-
-.icon-X:hover img,
-.icon-IG:hover img,
-.icon-YT:hover img {
-  transform: scale(1.2);
-  opacity: 0.8;
-  transition: transform 0.5s ease-in-out;
+.f2_wrap {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 60px;
+  padding-bottom: 60px;
 }
 
-.icon-X:hover img {
-  content: url(../imagenes/RRSS/X-Red.png);
+.fade.visible, .fade_delay.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade, .fade_delay {
+  opacity: 0;
+  transform: translate(0, 20px);
+  transition: all 1s;
+}
+.f2 {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  padding-right: 60px;
+  padding-bottom: 30px;
 }
 
-.icon-IG:hover img {
-  content: url(../imagenes/RRSS/IG-Red.png);
+p.f2_title {
+  font-size: 22px;
+  line-height: 28px;
+  margin-bottom: 0;
 }
 
-.icon-YT:hover img {
-  content: url(../imagenes/RRSS/YT-Red.png);
+.f2 p {
+  font-size: 18px;
+  line-height: 22px;
+  margin-bottom: 22px;
 }
+
+.fade.visible, .fade_delay.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+.fade, .fade_delay {
+  opacity: 0;
+  transform: translate(0, 20px);
+  transition: all 1s;
+}
+.f2 {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  padding-right: 60px;
+  padding-bottom: 30px;
+}
+
+.f3_wrap {
+  width: 100%;
+  float: left;
+  box-sizing: border-box;
+  padding-left: 60px;
+}
+.f3, .f3, .f3 {
+  width: 25%;
+  float: left;
+  box-sizing: border-box;
+  padding-right: 60px;
+}
+
+a.f_insta, a.f_yt, a.f_tw {
+  display: inline-block;
+  width: 31px;
+  height: 31px;
+  float: left;
+  margin-right: 20px;
+  transition: background-image 0.8s ease;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fade.visible, .fade_delay.visible {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.f3 p, .f3 p a {
+  color: #828485;
+}
+.f3 p {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+/*RRSS Icono*/
+
+/* Establecer las imágenes por defecto */
+.f_insta {
+  background-image: url('../imagenes/RRSS/IG-White.png');
+}
+
+.f_yt {
+  background-image: url('../imagenes/RRSS/YT-White.png');
+}
+
+.f_tw {
+  background-image: url('../imagenes/RRSS/X-White.png');
+}
+
+/* Cambiar las imágenes al hacer hover */
+.f_insta:hover {
+  background-image: url('../imagenes/RRSS/IG-Red.png');
+}
+
+.f_yt:hover {
+  background-image: url('../imagenes/RRSS/YT-Red.png');
+}
+
+.f_tw:hover {
+  background-image: url('../imagenes/RRSS/X-Red.png');
+}
+
+/* Estilos para pantallas medianas */
+@media (max-width: 992px) {
+  .f2_wrap,
+  .f3_wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .f2 {
+    width: 50%;
+    padding-right: 30px;
+  }
+  .f3,
+  .f3_2 {
+    width: 50%;
+    padding-right: 30px;
+  }
+}
+
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .f2_wrap,
+  .f3_wrap {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .f2,
+  .f3,
+  .f3_2 {
+    width: 100%;
+    padding-right: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
