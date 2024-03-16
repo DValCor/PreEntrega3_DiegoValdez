@@ -300,21 +300,21 @@ p {
 @media (max-width: 1024px) {
   .director-div {
     width: 100%;
-    max-width: 300px; /* Limita el ancho de las tarjetas */
+    max-width: 300px; 
     margin-bottom: 20px;
   }
   .director-div img {
     width: 100%;
-    height: auto; /* Ajusta la altura de las imágenes de forma proporcional */
+    height: auto; 
   }
   .overlay p {
-    margin-top: 150px; /* Ajusta el margen superior del texto */
+    margin-top: 150px; 
   }
 }
 
 
 
-/*info-section*/
+/*info-section-----------------------------*/
 
 .info-section {
   margin: 130px 0 50px 0;
@@ -330,7 +330,7 @@ p {
   color: #fff;
 }
 
-/*Service cards*/
+/*Service cards-----------------------------*/
 
 .srvice-cards {
   display: flex;
@@ -361,7 +361,7 @@ p {
   text-align: center;
 }
 
-/*Servicios*/
+/*SOBRE NOSOTROS------------------------------------------------------------------------------------------------------------------------------*/
 
 .white {
   background-color: #fff;
@@ -391,7 +391,7 @@ p {
   color: #ffffff;
 }
 
-/*Contact*/
+/*CONTACTO------------------------------------------------------------------------------------------------------------------------------*/
 .h1-custom {
   font-size: calc(25px + 1.0vw);
   font-family: 'Roboto', sans-serif;
@@ -413,7 +413,7 @@ a {
   font-weight: 300;
 }
 
-/*Form*/
+/*Form-----------------------------*/
 
 .main-title h1 {
   text-transform: uppercase;  
@@ -443,7 +443,7 @@ a {
 }
 
 
-/*Footer*/
+/*FOOTER------------------------------------------------------------------------------------------------------------------------------*/
 
 .footer1 {
   width: 100%;
@@ -565,7 +565,7 @@ a {
   line-height: 22px;
 }
 
-/*RRSS Icono*/
+/*RRSS Icono-----------------------------*/
 
 /* Establecer las imágenes por defecto */
 .f_insta {
